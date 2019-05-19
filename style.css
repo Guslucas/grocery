@@ -23,13 +23,14 @@ body {
     margin-right: auto;
     background-color: #eee;
     text-align: center;
+    border-radius: 0 0 30px 30px;
 }
 
 h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-a {
+a, .emphasis {
     text-decoration: none;
     color: #4ac0b9;
 }
@@ -63,6 +64,7 @@ img {
     font-size: 25px;
     margin-top: 15px;
     color: #4ac0b9;
+    margin-bottom: 0;
 }
 
 .menu-items {
@@ -80,6 +82,15 @@ img {
     border-radius: 5px;
 }
 
+.menu-item-type {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.icon-spiciness {
+    width: 20px;
+}
+
 @media (max-width: 700px) {
     .menu-item {
         width: 100%;
@@ -88,4 +99,15 @@ img {
     img {
         width: 60%;
     }
+}
+
+footer.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.fab, .fas {
+    font-size: 20px;
+    margin-top: 5px;
+    letter-spacing: 4px;
 }
