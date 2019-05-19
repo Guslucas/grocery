@@ -10,19 +10,82 @@ html {
 body {
     margin: 0;
     background-color: rgb(65, 53, 92);
-    color: black;
+    color: #89949e;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
 }
 
 .wrapper {
-    width: 60%;
+    width: 80%;
     padding: 20px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #eee;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #4ac0b9;
+}
+
+a:hover {
+    text-decoration: underline;
+    
+}
+
+a:visited {
+    color: #4ac0b9;
+}
+
+img {
+    width: 80%;
+}
+
+.logo {
+    font-family: Pacifico, sans-serif;
+    font-size: 40px;
+    color: #4ac0b9;
+    display: inline-block;
+    padding: 20px 0;
+    margin: 50px 0 20px;
+    border-top: 5px solid #42c7c1;
+    border-bottom: 5px solid #42c7c1;
+}
+
+.menu-item-name {
+    line-height: 1.7;
+    font-size: 25px;
+    margin-top: 15px;
+    color: #4ac0b9;
+}
+
+.menu-items {
+    margin-bottom: 60px;   
 }
 
 .menu-item {
     display: inline-block;
-    margin-bottom: 70px;
-    
+    width: 40%;
+    padding: 20px;
+  margin-top: 40px;
+}
+
+.menu-item-image {
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    .menu-item {
+        width: 100%;
+    }
+
+    img {
+        width: 60%;
+    }
 }

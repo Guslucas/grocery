@@ -11,16 +11,16 @@
     <?php require_once('menu.php') ?>
 
     <div class='wrapper'>
-        <h1>Shop</h1>
+        <h1 class='logo'>Shop</h1>
+        <div class='menu-items'></div>
 
-        <?php foreach ($menus as $menu): ?>
-        
-        <div class="menu-item">
-            <img src="<?php echo $menu->img ?>" width="200px">
-            <h3><?php echo $menu->name ?></h3>
+            <?php foreach ($menus as $menu): ?>
+            <div class="menu-item">
+                <img src="<?php echo $menu->img ?>" class='menu-item-image'>
+                <h3 class='menu-item-name'><a href='#'><?php echo $menu->name ?></a></h3>
+            </div>
+            <?php endforeach ?>
         </div>
-        <?php endforeach ?>
-        
     </div>
 </body>
 </html>
